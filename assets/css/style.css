@@ -25,32 +25,30 @@ header {
 }
 
 header h1 {
-    background-color: var(--terciary-color);
-    border: var(--secondary-color) solid 2px;
+    background-color: var(--primary-color);
+    border: var(--terciary-color) solid 2px;
     padding: 15px 100px 15px 25px;
     font-size: 40px;
     margin: 0;
     flex: 0 35%;
+    pointer-events: none;
 }
 
-header h1:hover {
-    background: var(--primary-color);
-    border: var(--terciary-color) solid 2px;
+header h1:hover  {
+    background: var(--terciary-color);
+    border: var(--secondary-color) solid 2px;
+    
 }
 
 header h1 a {
     color: var(--secondary-color);
     text-decoration: none;
-}
-
-header h1 a:hover {
-    color: var(--terciary-color);
+    pointer-events: auto;
 }
 
 header nav {
     padding: 0 40px 0 0;
     flex: 0 45%;
-    
 }
 
 header nav ul {
@@ -63,6 +61,7 @@ header nav ul {
 
 header nav ul li {
     padding: 20px 10px;
+    pointer-events: none;
 }
 
 header nav ul li:hover {
@@ -74,11 +73,8 @@ header nav ul li a {
     color: var(--secondary-color);
     font-size: 25px;
     padding: 5px 10px;
+    pointer-events: auto;
 }
-
-header nav ul li a:hover {
-    color: var(--primary-color);
-    }
 
 .hero {
     background-image: url("../images/0dba57a96d995f5b92d6294245ead3eb.jpg");
