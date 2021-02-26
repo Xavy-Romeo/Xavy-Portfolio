@@ -78,7 +78,7 @@ header nav ul li:hover {
 
 header nav ul li a {
     color: var(--secondary-color);
-    font-size: 28px;
+    font-size: 32px;
     padding: 5px 10px;
     pointer-events: auto;
     font-weight: bold;
@@ -104,12 +104,12 @@ section {
 .section-title {
     border-bottom: 3px solid var(--terciary-color);
     padding: 0 0 10px 15px;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 section p {
     padding: 20px 0 10px 50px;
-    font-size: 20px;
+    font-size: 22px;
     text-align:justify;
     line-height: 1.7;
 }
@@ -138,7 +138,7 @@ section p {
 }
 
 .about img:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 /* End About Me section styles */
 
@@ -151,14 +151,15 @@ section p {
 
 .contact p {
     padding: 20px 52px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     border: 2px solid var(--secondary-color);
+    color: var(--terciary-color);
 }
 
 .contact a {
     color: var(--secondary-color);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
 }
 /* End Contact Me Styles */
@@ -166,7 +167,7 @@ section p {
 /* Apply styles to footer */
 footer {
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     padding: 20px 0 0 0;
     border-top: var(--terciary-color) solid 3px;
     margin: 20px;
