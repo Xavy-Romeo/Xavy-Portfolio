@@ -1,9 +1,11 @@
+/* Create root styles */
 :root {
     --primary-color: rgb(16, 7, 51);
     --secondary-color: rgb(246, 132, 255);
     --terciary-color: rgb(87, 59, 255);
 }
 
+/* Create universal selector */
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +16,13 @@ body {
     font-family:'Times New Roman', Times, serif;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    border: solid 8px var(--secondary-color);
+    margin: 4px;
 }
 
+/* Apply styles to header */
 header {
-    padding: 15px 0 15px 15px;
+    padding: 20px 0 15px 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -25,13 +30,14 @@ header {
 }
 
 header h1 {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: var(--terciary-color) solid 2px;
     padding: 15px 100px 15px 25px;
-    font-size: 40px;
+    font-size: 45px;
     margin: 0;
     flex: 0 35%;
     pointer-events: none;
+    text-shadow: 5px 5px 10px rgba(87,59,255,0.7);      
 }
 
 header h1:hover  {
@@ -41,9 +47,10 @@ header h1:hover  {
 }
 
 header h1 a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     pointer-events: auto;
+    text-shadow: 5px 5px 10px rgba(87,59,255,0.7);  
 }
 
 header nav {
@@ -55,7 +62,7 @@ header nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -71,18 +78,63 @@ header nav ul li:hover {
 
 header nav ul li a {
     color: var(--secondary-color);
-    font-size: 25px;
+    font-size: 28px;
     padding: 5px 10px;
     pointer-events: auto;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(87,59,255,0.7);  
 }
+/* End header styles */
 
+/* Apply styles to hero */
 .hero {
     background-image: url("../images/0dba57a96d995f5b92d6294245ead3eb.jpg");
     height: 200px;
     background-size:cover;
     background-position: center;
+    border: var(--secondary-color) solid 2px;
+}
+/* End hero styles */
+
+/* Apply styles to all sections */
+section {
+    margin: 20px 20px 45px 20px;
 }
 
-section h2 {
+.section-title {
     border-bottom: 3px solid var(--terciary-color);
+    padding: 0 0 10px 15px;
+    font-size: 28px;
 }
+
+section p {
+    padding: 20px 50px 10px 50px;
+    font-size: 20px;
+    text-align:justify;
+}
+/* End all sections styles */
+
+/* Contact Me Styles */
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px 10px 50px;
+}
+
+.contact p {
+    padding: 20px 55px;
+    font-size: 20px;
+    border: 1px solid var(--secondary-color);
+}
+/* End Contact Me Styles */
+
+/* Apply styles to footer */
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 0 0 0;
+    border-top: var(--terciary-color) solid 3px;
+    margin: 20px;
+    text-shadow: 5px 5px 10px rgba(87,59,255,0.7);  
+}
+/* End footer styles */
