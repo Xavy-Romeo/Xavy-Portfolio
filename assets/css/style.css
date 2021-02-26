@@ -108,13 +108,30 @@ section {
 }
 
 section p {
-    padding: 20px 50px 10px 50px;
+    padding: 20px 0 10px 50px;
     font-size: 20px;
     text-align:justify;
+    line-height: 1.7;
 }
 /* End all sections styles */
 
-/* Contact Me Styles */
+/* About Me section styles */
+.about {
+    display: flex;
+    padding: 20px 50px 10px 50px;
+}
+
+.about p {
+    flex: 1 80%;
+
+}
+.about img {
+        border: var(--secondary-color) solid 2px;
+    flex: 0 20%;
+}
+/* End About Me section styles */
+
+/* Contact Me section styles */
 .contact {
     display: flex;
     justify-content: space-evenly;
