@@ -119,27 +119,38 @@ section p {
 .about {
     display: flex;
     padding: 20px 50px 10px 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
 .about div {
     display: flex;
     flex-wrap: wrap;
     flex: 1 85%;
-    justify-content: space-evenly;
-}
-
-.about div img {
-    height: 150px;    
+    justify-content: space-between;
 }
 
 .about img {
     border: var(--secondary-color) solid 2px;
     flex: 0 15%;
     padding: 5px;
+    max-height: 500px;
 }
 
 .about img:hover {
     transform: scale(1.25);
 }
+
+.about div div {
+    padding: 5px 50px;
+    justify-content: space-evenly; 
+}
+
+.about div div img {
+    height: 150px;
+}
+
+
 /* End About Me section styles */
 
 /* Contact Me section styles */
@@ -155,12 +166,22 @@ section p {
     font-weight: bold;
     border: 2px solid var(--secondary-color);
     color: var(--terciary-color);
+    text-align: center;
+}
+
+.contact p:hover {
+    background: var(--terciary-color);
+    color: var(--primary-color);
 }
 
 .contact a {
     color: var(--secondary-color);
     font-size: 22px;
     font-weight: normal;
+}
+
+.contact a:hover {
+    color: var(--primary-color);
 }
 /* End Contact Me Styles */
 
