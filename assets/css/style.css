@@ -233,3 +233,43 @@ footer {
     text-shadow: 5px 5px 10px rgba(87,59,255,0.7);  
 }
 /* End footer styles */
+
+/* Media Queries */
+    /* Media Query for screen max 980px */
+@media screen and (max-width: 980px) {
+    
+    header {
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .section-border {
+        border: none;
+    }
+
+    .section-title {
+        width: 100%;
+        text-align: center;
+        flex: 0 80%;
+        border-bottom: var(--terciary-color) solid 2px;
+    }
+}
+
+/* End Media Queries */
