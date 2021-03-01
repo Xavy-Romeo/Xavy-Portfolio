@@ -88,7 +88,7 @@ header nav ul li a {
 
 /* Apply styles to hero */
 .hero {
-    background-image: url("../images/0dba57a96d995f5b92d6294245ead3eb.jpg");
+    background-image: url("../images/hero-bg.jpg");
     height: 200px;
     background-size:cover;
     background-position: center;
@@ -99,12 +99,19 @@ header nav ul li a {
 /* Apply styles to all sections */
 section {
     margin: 20px 20px 45px 20px;
+    display: flex;
 }
 
 .section-title {
-    border-bottom: 3px solid var(--terciary-color);
     padding: 0 0 10px 15px;
     font-size: 32px;
+    flex: 0 9%;
+    text-align: right;
+}
+
+.section-border {
+    border-right: 3px solid var(--terciary-color);
+    flex: 0 2%;
 }
 
 section p {
@@ -121,6 +128,7 @@ section p {
     padding: 20px 50px 10px 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex: 0 89%;
 }
 
 .about div {
@@ -150,14 +158,44 @@ section p {
     height: 150px;
 }
 
-
 /* End About Me section styles */
+
+/* Work section styles */
+.work-imgs {
+    padding: 20px 52px;
+    flex: 0 89%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-imgs div {
+    border: 2px solid var(--secondary-color);
+}
+
+.work-imgs img {
+    height: 400px;
+    width: 600px;
+}
+
+.work-projects {
+    padding: 20px;
+    flex: 0 40%;
+    border: 1px solid var(--secondary-color);
+}
+
+.work-projects img {
+    height: 150px;
+    width: 200px;
+}
+/* End Work section styles */
 
 /* Contact Me section styles */
 .contact {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 50px 10px 50px;
+    justify-content: space-between;
+    padding: 20px 52px;
+    flex: 0 89%;
 }
 
 .contact p {
