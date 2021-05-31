@@ -182,11 +182,29 @@ section p {
     padding: 20px;
     flex: 0 40%;
     border: 1px solid var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects { 
+    flex: 0 40%;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.work-projects a {
+    flex: 1 40%;
+    justify-content: center;
 }
 
 .work-projects img {
     height: 150px;
     width: 200px;
+    /* flex: 1 45%; */
 }
 /* End Work section styles */
 
